@@ -1,0 +1,21 @@
+nav[aria-label="primary-nav"] {
+  background-color: blanchedalmond;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
