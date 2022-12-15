@@ -6,6 +6,7 @@ import {
   AddColorRequestBody,
 } from "../types/api-response.types";
 
+// to fetch all colors
 export const fetchColors = async () => {
   try {
     const res = await axios.get<ColorAPIResponse[]>(
@@ -19,6 +20,7 @@ export const fetchColors = async () => {
   }
 };
 
+// to get paginated response from colors api
 export const fetchPaginatedColors = async (currentPage: number) => {
   try {
     const res = await axios.get<ColorAPIResponse[]>(
@@ -33,6 +35,7 @@ export const fetchPaginatedColors = async (currentPage: number) => {
   }
 };
 
+// to add new color
 export const addColors = async (body: AddColorRequestBody) => {
   try {
     const res = await axios.post(`${BASE_SERVER_URL}/colors`, body);

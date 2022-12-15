@@ -3,6 +3,7 @@ import { BASE_SERVER_URL } from "../constant";
 
 import { SkillsAPIResponse } from "../types/api-response.types";
 
+// get all the skills list with userID
 export const fetchSkills = async () => {
   try {
     const res = await axios.get<SkillsAPIResponse[]>(
@@ -17,6 +18,7 @@ export const fetchSkills = async () => {
   }
 };
 
+// fetch particular user's skills
 export const fetchUsersSkills = async (emailID: string) => {
   try {
     const res = await axios.get<SkillsAPIResponse>(

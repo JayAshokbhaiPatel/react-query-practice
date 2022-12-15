@@ -7,6 +7,7 @@ function Comment() {
   const { data, isError, error } = useComment(id);
 
   if (isError) {
+    // ! fix this typescript error
     return <h2>{error?.message}</h2>;
   }
   return (

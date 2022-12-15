@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import { AddColors } from "../../components/forms";
+
 import { useComments } from "../../hooks";
 
 function Comments() {
   const { data, isError, error } = useComments();
 
   if (isError) {
+    // ! fix this typescript error
     return <h2>{error.message}</h2>;
   }
 

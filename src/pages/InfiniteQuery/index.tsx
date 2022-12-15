@@ -21,6 +21,7 @@ function InfiniteQuery() {
       })}
 
       <div>
+        {/*     //!fix this typescript error  //  */}
         <button disabled={!hasNextPage} onClick={fetchNextPage}>
           Load More
         </button>

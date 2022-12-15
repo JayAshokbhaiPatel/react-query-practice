@@ -14,6 +14,7 @@ function AddColors() {
   };
 
   if (isLoading) {
+    // todo Make Loader for POST request
     return <h2>Adding the Data</h2>;
   }
 

@@ -4,6 +4,7 @@ import { BASE_SERVER_URL } from "../constant";
 
 import { PostResponse } from "../types/api-response.types";
 
+// get all the posts
 export const fetchPosts = async () => {
   try {
     const res = await axios.get<PostResponse[]>(`${BASE_SERVER_URL}/posts`);

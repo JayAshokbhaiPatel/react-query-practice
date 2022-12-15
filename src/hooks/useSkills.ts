@@ -15,6 +15,7 @@ function useSingleUserSkills(emailID: string) {
     ["fetchSkillsSingleUser", emailID],
     () => fetchUsersSkills(emailID),
     {
+      // * disabled query until email id received actually
       enabled: !!emailID,
     }
   );

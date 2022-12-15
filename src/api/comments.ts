@@ -3,6 +3,7 @@ import { BASE_SERVER_URL } from "../constant";
 
 import { ResponseData } from "../types/api-response.types";
 
+// get all comments
 export const fetchComments = async () => {
   try {
     const res = await axios.get<ResponseData[]>(`${BASE_SERVER_URL}/comments`);
